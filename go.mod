@@ -12,7 +12,6 @@ require (
 )
 
 require (
-	github.com/beyondblog/opensea-go v0.0.1
 	github.com/fatih/structtag v1.2.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
