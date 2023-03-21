@@ -3,8 +3,8 @@ package opensea
 import (
 	"context"
 
+	"github.com/beyondblog/opensea-go/model"
 	"github.com/casiphia/gopkg/restgo"
-	"github.com/casiphia/opensea-go/model"
 )
 
 // Events The /events endpoint provides a list of events that occur on the assets that OpenSea tracks.

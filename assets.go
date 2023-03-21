@@ -3,8 +3,8 @@ package opensea
 import (
 	"context"
 
+	"github.com/beyondblog/opensea-go/model"
 	"github.com/casiphia/gopkg/restgo"
-	"github.com/casiphia/opensea-go/model"
 )
 
 // Assets To retrieve assets from our API, call the /assets endpoint with the desired filter parameters.

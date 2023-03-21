@@ -3,8 +3,8 @@ package opensea
 import (
 	"context"
 
+	"github.com/beyondblog/opensea-go/model"
 	"github.com/casiphia/gopkg/restgo"
-	"github.com/casiphia/opensea-go/model"
 )
 
 // CollectionStats Use this endpoint to fetch stats for a specific collection,

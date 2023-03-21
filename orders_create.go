@@ -3,8 +3,8 @@ package opensea
 import (
 	"context"
 
+	"github.com/beyondblog/opensea-go/model"
 	"github.com/casiphia/gopkg/restgo"
-	"github.com/casiphia/opensea-go/model"
 )
 
 // This endpoint is used to fetch the set of active listings on a given NFT for the Seaport contract.

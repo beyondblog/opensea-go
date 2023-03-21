@@ -3,8 +3,8 @@ package opensea
 import (
 	"context"
 
+	"github.com/beyondblog/opensea-go/model"
 	"github.com/casiphia/gopkg/restgo"
-	"github.com/casiphia/opensea-go/model"
 )
 
 // Collections Use this endpoint to fetch collections on OpenSea

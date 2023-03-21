@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/casiphia/opensea-go/model/stream"
+	"github.com/beyondblog/opensea-go/model/stream"
 	"github.com/mitchellh/mapstructure"
 	"github.com/nshafer/phx"
 )
 
 func TestClient_NewStreamClient(t *testing.T) {
-	client := NewStreamClient(MAINNET, "apikey", phx.LogInfo, func(err error) {
+	client := NewStreamClient(MAINNET, "apikey", phx.NewSimpleLogger(phx.LogInfo), func(err error) {
 		fmt.Println("opensea.NewStreamClient err:", err)
 	})
-	if err := client.Connect(); err == nil {
+	if err := client.Connect(); err != nil {
 		fmt.Println("client.Connect err:", err)
 		return
 	}

@@ -1,6 +1,6 @@
-module github.com/casiphia/opensea-go
+module github.com/beyondblog/opensea-go
 
-go 1.19
+go 1.18
 
 require (
 	github.com/casiphia/gopkg v0.0.0-20221123085503-ac5ee8e1ed53
