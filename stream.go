@@ -13,7 +13,7 @@ type StreamClient struct {
 	channels map[string]*phx.Channel
 }
 
-func NewStreamClient(network Network, token string, logger phx.Logger, onError func(error)) *StreamClient {
+func NewStreamClient(network Network, token string, onError func(error)) *StreamClient {
 	m := map[Network]string{
 		MAINNET: "wss://stream.openseabeta.com/socket",
 		TESTNET: "wss://testnets-stream.openseabeta.com/socket",
@@ -30,7 +30,7 @@ func NewStreamClient(network Network, token string, logger phx.Logger, onError f
 			onError(err)
 		}
 	})
-	socket.Logger = logger
+	socket.Logger = phx.NewSimpleLogger(phx.LogInfo)
 	return &StreamClient{
 		socket:   socket,
 		channels: make(map[string]*phx.Channel),
